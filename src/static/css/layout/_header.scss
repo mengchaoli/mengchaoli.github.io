@@ -8,40 +8,51 @@
   .hamburger-react {
     z-index: 99;
   }
-
-  .nav {
-    overflow-y: scroll;
-    list-style: none;
-    position: fixed;
-    top: 0;
-    background: $primary-color-red;
-    right: 0;
-    // bottom: 0;
-    height: 100vh;
-    width: 100vw;
-    // visibility: hidden;
-    overflow: hidden;
-    z-index: 9;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-
-    &.open {
-      // width: 50vw;
-      // visibility: visible;
-      transform: translateX(0);
-    }
-
-    &-list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
-      list-style: none;
-    }
-  }
 }
 
-ul {
+.nav {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  background: $primary-color-red;
+  right: 0;
+  // bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  // visibility: hidden;
+  overflow: hidden;
+  z-index: 9;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+
+  &.open {
+    // width: 50vw;
+    // visibility: visible;
+    transform: translateY(0);
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    list-style: none;
+
+    &__item {
+      font-size: 2rem;
+      padding: 2rem 0;
+      font-weight: 300;
+      text-transform: uppercase;
+
+      // &:hover {
+      // }
+
+      // &.active > a {
+      //   color: $primary-color-blue;
+      // }
+    }
+  }
 }

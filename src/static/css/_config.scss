@@ -3,3 +3,17 @@
   padding: 0;
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+
+  &:hover {
+    color: $primary-color-blue;
+  }
+
+  &.active {
+    font-weight: bold;
+    color: $primary-color-blue;
+  }
+}
