@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/header';
 import Footer from './components/footer';
-import HomePage from './components/content/home';
-import AboutPage from './components/content/about';
-import ProjectPage from './components/content/projects';
+import HomePage from './pages/home';
+import AboutPage from './pages/about';
+import ProjectPage from './pages/projects';
 
 import './static/css/main.scss'; // all of our styles
 

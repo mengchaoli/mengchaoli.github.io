@@ -11,6 +11,15 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    a {
+      color: black;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $primary-color-blue;
+      }
+    }
   }
 
   .copy-right {
