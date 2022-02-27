@@ -26,7 +26,7 @@ function Footer() {
         />*/}
       </div>
       <div className='copy-right'>
-        <p>&copy; Copyright 2022</p>
+        &copy; Copyright {new Date().getFullYear()}
       </div>
     </div>
   );

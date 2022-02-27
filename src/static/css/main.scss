@@ -17,12 +17,17 @@
   flex-direction: column;
 }
 
-// Home page css
-.home-wrapper {
+@mixin all-page-wrapper {
   // do media screen here
   width: 90%;
   margin: 0 auto;
-  padding: 4rem;
+  padding: 4rem 4rem 0;
+  flex: 1 1 auto;
+}
+
+// Home page css
+.home-wrapper {
+  @include all-page-wrapper();
 }
 
 .name {
@@ -33,5 +38,31 @@
   &-lastname {
     font-weight: 700;
     color: $primary-color-blue;
+  }
+}
+
+// About page css
+.about-wrapper {
+  @include all-page-wrapper();
+}
+
+.about-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding-top: 4rem;
+
+  &-title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: $primary-color-blue;
+  }
+
+  p {
+    // media query here for fontsize
+    font-size: 12px;
+    text-align: left;
+    padding: 0.5rem 1.5rem;
   }
 }
