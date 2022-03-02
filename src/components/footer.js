@@ -1,26 +1,18 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FaGithub } from 'react-icons/fa';
 
 function Footer() {
   return (
     <div className='footer'>
       <div className='social-media'>
         <a href='https://github.com/mengchaoli'>
-          <FontAwesomeIcon
-            className='social-media__item'
-            icon={faGithub}
-            size='lg'
-            bounce
-          />
+          <FaGithub size='2rem' />
         </a>
 
-        {/*<FontAwesomeIcon
-          className='social-media__item'
+        {/*<FontAwesomeIco
           icon={faInstagram}
           size='lg'
         />
-        <FontAwesomeIcon
-          className='social-media__item'
+        <FontAwesomeIco
           icon={faTwitter}
           size='lg'
         />*/}

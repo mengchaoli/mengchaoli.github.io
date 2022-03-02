@@ -62,9 +62,25 @@
 
   p {
     // media query here for fontsize
-    font-size: 12px;
+    font-size: 1rem;
     text-align: left;
     padding: 0.5rem 1.5rem;
+  }
+
+  .about-tech__content {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
+
+    span {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      background-color: lightblue;
+    }
   }
 }
 
@@ -75,4 +91,19 @@
   flex-direction: column;
   row-gap: 2rem;
   margin-bottom: 2rem;
+}
+
+// Contact page css
+.contact-wrapper {
+  @include all-page-wrapper();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
 }

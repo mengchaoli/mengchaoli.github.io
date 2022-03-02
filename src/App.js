@@ -5,6 +5,7 @@ import Footer from './components/footer';
 import HomePage from './pages/home';
 import AboutPage from './pages/about';
 import ProjectPage from './pages/projects';
+import ContactPage from './pages/contact';
 
 import './static/css/main.scss'; // all of our styles
 
@@ -17,6 +18,7 @@ function App() {
           <Route exact path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />}></Route>
           <Route path='/projects' element={<ProjectPage />}></Route>
+          <Route path='/contact' element={<ContactPage />}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />

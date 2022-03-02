@@ -1,3 +1,13 @@
+const techStacks = [
+  'Node.js',
+  'JavaScript',
+  'React',
+  'HTML',
+  'CSS',
+  'MongoDB',
+  'MySQL',
+];
+
 const AboutPage = () => {
   return (
     <div className='about-wrapper'>
@@ -23,6 +33,16 @@ const AboutPage = () => {
               Bachelor of Science in Software Engineering, Hunan University,
               Hunan, China
             </p>
+          </div>
+          <div className='about-main__tech'>
+            <div className='about-main-title about-tech--title'>
+              /Tech Stacks
+            </div>
+            <div className='about-tech__content'>
+              {techStacks.map((techStack) => (
+                <span>#{techStack}</span>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -3,4 +3,26 @@
   width: 320px;
   height: 320px;
   border: 2px solid $primary-color-blue;
+
+  &__cover {
+    height: 80%;
+    width: 100%;
+    border-bottom: 2px solid $primary-color-blue;
+  }
+
+  &__footer {
+    height: 20%;
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+
+    a {
+      color: black;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $primary-color-blue;
+      }
+    }
+  }
 }

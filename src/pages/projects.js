@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import ProjectCard from '../components/project-card';
 const projectList = [
   { detailLink: '123', coverImg: '123' },
