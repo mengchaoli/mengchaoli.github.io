@@ -6,3 +6,7 @@ $font-weights: (
   'medium': 500,
   'bold': 700,
 );
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}

@@ -3,28 +3,23 @@
     padding: 0;
   }
   .hamburger-react {
-    visibility: hidden;
+    // visibility: hidden;
+    display: none;
   }
-  .nav-bar {
-    visibility: hidden;
-  }
-  .nav-list {
-    flex-direction: row;
-    height: 100%;
-    justify-content: right;
+  .nav {
+    visibility: visible;
+    &-list {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: right;
+      transform: translateY(0);
+      height: 50px;
+      text-align: right;
 
-    &__item {
-      font-size: 20px;
-      margin-right: 0.875rem;
-      padding: 0;
-
-      a:hover {
-        color: $primary-color-red;
-      }
-
-      a.active {
-        font-weight: bold;
-        color: $primary-color-red;
+      &__item {
+        display: inline;
+        padding: 0 1.5rem 0 0;
+        font-size: 1.5rem;
       }
     }
   }
