@@ -12,7 +12,6 @@
 
 .nav {
   overflow-y: scroll;
-  list-style: none;
   position: fixed;
   top: 0;
   background: $primary-color-red;
@@ -55,4 +54,9 @@
       // }
     }
   }
+}
+
+.nav-bar {
+  height: 50px;
+  width: 100%;
 }
