@@ -32,6 +32,10 @@
 // Home page css
 .home-wrapper {
   @include all-page-wrapper();
+
+  a {
+    color: inherit;
+  }
 }
 
 .name {

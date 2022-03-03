@@ -1,4 +1,4 @@
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -6,6 +6,9 @@ function Footer() {
       <div className='social-media'>
         <a href='https://github.com/mengchaoli'>
           <FaGithub size='2rem' />
+        </a>
+        <a href='https://www.linkedin.com/in/mengchao-li-79b530179/'>
+          <FaLinkedin size='2rem' />
         </a>
 
         {/*<FontAwesomeIco

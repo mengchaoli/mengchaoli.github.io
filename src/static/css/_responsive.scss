@@ -1,4 +1,5 @@
 @include media-md {
+  // Header
   .header {
     padding: 0;
     height: 50px;
@@ -30,8 +31,31 @@
       color: $primary-color-red;
     }
   }
+
   .hamburger-react {
     // visibility: hidden;
     display: none;
+  }
+
+  // Footer:
+  .footer {
+    .social-media {
+      width: 15%;
+    }
+    .copy-right {
+      width: 85%;
+    }
+  }
+}
+
+@include media-lg {
+  // Footer:
+  .footer {
+    .social-media {
+      width: 10%;
+    }
+    .copy-right {
+      width: 90%;
+    }
   }
 }
