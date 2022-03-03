@@ -7,12 +7,15 @@ const Header = () => {
   const navListArray = ['/about', '/projects', '/contact'];
   return (
     <div className='header'>
-      <Hamburger
-        toggled={isOpen}
-        toggle={setOpen}
-        color={isOpen ? '#0bd3d3' : '#f890e7'}
-      />
-      <div className={`nav ${isOpen ? 'open' : ''}`}>
+      <div className='nav-container'>
+        <span className='logo'>
+          <NavLink to='/'>ML</NavLink>
+        </span>
+        <Hamburger
+          toggled={isOpen}
+          toggle={setOpen}
+          color={isOpen ? '#0bd3d3' : '#f890e7'}
+        />
         <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
           {navListArray.map((navListItem) => {
             return (

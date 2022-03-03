@@ -1,26 +1,37 @@
 @include media-md {
   .header {
     padding: 0;
+    height: 50px;
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+
+      .nav-list {
+        position: relative;
+        visibility: visible;
+        transform: translateY(0);
+        height: 100%;
+        flex-flow: row wrap;
+        width: 100%;
+        background-color: transparent;
+        justify-content: right;
+
+        &__item {
+          padding: 0 15px 0 0;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    a:hover,
+    a.active {
+      color: $primary-color-red;
+    }
   }
   .hamburger-react {
     // visibility: hidden;
     display: none;
-  }
-  .nav {
-    visibility: visible;
-    &-list {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: right;
-      transform: translateY(0);
-      height: 50px;
-      text-align: right;
-
-      &__item {
-        display: inline;
-        padding: 0 1.5rem 0 0;
-        font-size: 1.5rem;
-      }
-    }
   }
 }
