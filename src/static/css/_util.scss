@@ -1,0 +1,16 @@
+// Util class
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin all-page-wrapper {
+  // do media screen here
+  width: 90%;
+  margin: 0 auto 2rem;
+  padding: 4rem 2rem 0;
+  flex: 1 1 auto;
+}

@@ -58,4 +58,17 @@
       width: 90%;
     }
   }
+
+  // Project page:
+  .project-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  @include media-xl {
+    .project-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
